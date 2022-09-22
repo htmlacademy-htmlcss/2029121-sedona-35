@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Анастасия Мещерякова](https://up.htmlacademy.ru/htmlcss/35/user/2029121).
-* Наставник: [Анастасия Титова] (https://htmlacademy.ru/profile/id1172273).
+* Наставник: [Анастасия Титова](https://htmlacademy.ru/profile/id1172273).
 
 ---
 
