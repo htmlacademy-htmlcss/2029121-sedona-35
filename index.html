@@ -7,32 +7,38 @@
   <body>
 <header class="page-header">
 <nav class="main-nav">
-  <img src="#" alt="logo">
+  <a aria-label="Ссылка на главную страницу" href="index.html"><img src="#" alt="logo" width="#" height="#"></a>
   <ul class="nav-list">
-    <li class="nav-list-item"><a class="nav-link" href="#">Главная</a></li>
-    <li class="nav-list-item"><a class="nav-link" href="#">О Седоне</a></li>
-    <li class="nav-list-item"><a class="nav-link" href="#">Гостиницы</a></li>
+    <li class="nav-list-item"><a aria-label="Главная" class="nav-link" href="#">Главная</a></li>
+    <li class="nav-list-item"><a aria-label="О Седоне" class="nav-link" href="#">О Седоне</a></li>
+    <li class="nav-list-item"><a aria-label="Гостиницы" class="nav-link" href="#">Гостиницы</a></li>
   </ul>
   <ul>
-    <li class="nav-list-item2"><a class="nav-link" href="#"><span class="visually-hidden">Поиск</span></a></li>
-    <li class="nav-list-item2"><a class="nav-link" href="#"><span class="visually-hidden">Избранное</span></a></li>
-    <li class="nav-list-item2"><a class="nav-link" href="#">Хочу сюда!</a></li>
+    <li class="nav-list-item"><a aria-label="Поиск" class="nav-link" href="#"><span class="visually-hidden">Поиск</span></a></li>
+    <li class="nav-list-item"><a aria-label="Избранное" class="nav-link" href="#"><span class="visually-hidden">Избранное</span></a></li>
+    <li class="nav-list-item"><a aria-label="Хочу сюда!" class="nav-link" href="#">Хочу сюда!</a></li>
   </ul>
 </nav>
-<p>Welcome to the gorgeous Sedona "Because the Grand Canyon sucks!"</p>
 </header>
  
-<main class="main=index">
+<main class="main-index">
   <h1 class="visually-hidden">Главная страница сайта города Седона</h1>
-
+<section class="promo">
+  <img src="#" width="#" height="#" alt="landscape">
+</section>
 <section class="advantages">
-  <h2>Седона — небольшой городок в Аризоне,
+  <h2 class="advantages-title">Седона — небольшой городок в Аризоне,
     заслуживающий большего!</h2>
-<p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+<p class="advantages-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+<section class="advantages-list">
+  <h2 class="advantages-list-title visually-hidden">Список преимуществ</h2>
   <ul class="advantages-list">
     <li class="advantages-list-item">
       <h3 class="advantages-title">Настоящий городок</h3>
       <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+    </li>
+    <li class="advantages-list-item">
+      <img src="#" height="#" width="#">
     </li>
     <li class="advantages-list-item">
       <h3 class="advantages-title">Небольшая площадь</h3>
@@ -47,10 +53,14 @@
       <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
     </li>
     <li class="advantages-list-item">
+      <img src="#" height="#" width="#" alt="landscape">
+    </li>
+    <li class="advantages-list-item">
       <h3 class="advantages-title">Там есть мост дьявола</h3>
       <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
     </li>
   </ul>
+</section>
 </section>
 
 <section class="features">
@@ -58,7 +68,7 @@
   <ul class="features-list">
     <li class="features-list-item">
       <h3 class="features-title">Жильё</h3>
-      <p class="features-description">Рекомендуем пожитьв настоящем мотеле, всё как в кино!</p>
+      <p class="features-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
     </li>
     <li class="features-list-item">
       <h3 class="features-title">Еда</h3>
@@ -75,30 +85,29 @@
   <h2 class="virtually-hidden">Поиск гостиницы</h2>
   <h3 class="hotel-title">Заинтересовались?</h3>
   <p class="hotel-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-  <a class="hotel-link" href="#">Поиск гостиницы в Седоне</a>
+  <button aria-label="Поиск гостиницы в Седоне" class="hotel-button" type="button">Поиск гостиницы в Седоне</button>
 
 </section> 
 
 <section class="newsletter">
-<h2 class="hewsletter-title">Подпишитесь на рассылку</h2>
+<h2 class="newsletter-title">Подпишитесь на рассылку</h2>
 <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
 <form class="newsletter-form" method="post" action="https://echo.htmlacademy.ru/">
- <p><label for="email">Ваш e-mail</label>
-  <input type="text" name="email" id="email" placeholder="Ваш e-mail">
-</p>
-  <button class="button-subscribe" type="button">Подписаться</button>
+ <p class="newsletter-input"><label for="email">Ваш e-mail</label>
+  <input type="text" name="email" id="email" placeholder="Ваш e-mail"></p>
+  <button aria-label="Подписаться" class="button-subscribe" type="button">Подписаться</button>
 </form>
 </section> 
 </main>
 
 <footer>
 <ul class="socials">
-  <li class="socials-item"><a href="#"><span class="visually-hidden">ВКонтакте</span></a></li>
-  <li class="socials-item"><a href="#"><span class="visually-hidden">Telegram</span></a></li>
-  <li class="socials-item"><a href="#"><span class="visually-hidden">YouTube</span></a></li>
+  <li class="socials-item"><a aria-label="ВКонтакте" href="https://vk.com/htmlacademy"><span class="visually-hidden">ВКонтакте</span></a></li>
+  <li class="socials-item"><a aria-label="Telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">Telegram</span></a></li>
+  <li class="socials-item"><a aria-label="YouTube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">YouTube</span></a></li>
 </ul>
 <div class=phone><a href="tel:+78128121212">+7 (812) 812-12-12</a></div>
-<img class="copyright" src="#" alt="html academy">
+<a aria-label="Html Academy site" href="https://htmlacademy.ru/" target="_blank"><img class="copyright" src="#" alt="html academy" width="#" height="#"></a>
 </footer>
   
 </body>
