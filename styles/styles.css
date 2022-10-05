@@ -15,11 +15,18 @@
   }
 
   .visually-hidden {
-    display: none;
+        position: absolute;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        border: 0;
 }
 
 body {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 22px;
     line-height: 26px;
     background-color: #F2F2F2;
@@ -43,6 +50,7 @@ button {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
+    text-transform: capitalize;
 
 }
 
@@ -50,28 +58,49 @@ button {
     list-style: none;
 }
 
+.want-button {
+    background-color: #756157;
+    color: white;
+    font-size: 16px;
+    line-height: 20px;
+}
+
 .promo {
-    background-image: url(../images/index-background-1.jpg);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
     text-align: center;
     
 }
 
-.divider {
-    background-image: url(../images/divider.png);
+.container {
+    background-image: url(../images/divider.png), url(../images/index-background-1.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-size: 100% auto;
+    background-position: 0 300px, 0 0;
 }
 
-.advantages-title {
+.title {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+
+}
+
+
+.advantages-list-title {
     font-size: 30px;
     line-height: 36px;
+    color: #000000;
+    text-transform: uppercase;
 }
 
-.advantages-description {
+.advantages-list-description {
     font-size: 20px;
     line-height: 24px;
+    color: #333333;
 }
 
 .advantages-list {
@@ -89,14 +118,10 @@ button {
 
 .advantages-title {
     text-transform: uppercase;
-    font-size: 24px;
-    line-height: 28px;
+    color: #000000;
 }
 
-.advantages-description {
-    font-size: 18px;
-    line-height: 21px;
-}
+
 
 .advantages-list-item:nth-child(2n) {
     background-color: rgba(131, 179, 211, 0.12);
@@ -136,13 +161,7 @@ button {
 
 .features-title {
     text-transform: uppercase;
-    font-size: 24px;
-    line-height: 28px;
-}
-
-.features-description {
-    font-size: 18px;
-    line-height: 21px;
+    color: #000000;
 }
 
 .hotel-search {
@@ -153,11 +172,21 @@ button {
     text-transform: uppercase;
     font-size: 30px;
     line-height: 36px;
+    color: #000000;
 }
 
 .hotel-description {
     font-size: 22px;
     line-height: 26px;
+    color: #333333;
+}
+
+.hotel-button {
+    color: white;
+    background-color: #756157;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
 }
 
 .newsletter {
@@ -172,26 +201,46 @@ button {
     text-transform: uppercase;
     font-size: 30px;
     line-height: 36px;
+    color: #ffffff;
 }
 
 .newsletter-description {
     font-size: 22px;
     line-height: 26px;
+    color: #333333;
+}
+
+.button-subscribe {
+    color: white;
+    background-color: #82B3D3;;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
 }
 
 .socials-item:first-child {
     background-image: url(../images/vk.svg);
     background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
 }
 
 .socials-item:nth-child(2) {
     background-image: url(../images/telegram.svg);
     background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
 }
 
 .socials-item:last-child {
     background-image: url(../images/youtube.svg);
     background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+
+.socials-item {
+    list-style: none;
 }
 
 .phone {
