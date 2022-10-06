@@ -77,30 +77,41 @@ button {
     background-position: 0 300px, 0 0;
 }
 
-.title {
-    font-size: 24px;
-    line-height: 28px;
-}
 
-.description {
+
+.advantages-description {
     font-size: 18px;
     line-height: 21px;
+    color: #333333;
+}
+
+.advantages-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;  
+}
+
+.advantages-description {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
     color: #333333;
 
 }
 
-
 .advantages-list-title {
-    font-size: 30px;
-    line-height: 36px;
-    color: #000000;
+    font-size: 24px;
+    line-height: 28px;
+    color: white;
     text-transform: uppercase;
 }
 
 .advantages-list-description {
-    font-size: 20px;
-    line-height: 24px;
-    color: #333333;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
 }
 
 .advantages-list {
@@ -116,12 +127,19 @@ button {
     list-style: none;
 }
 
-.advantages-title {
+.divider-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
     text-transform: uppercase;
     color: #000000;
 }
 
-
+.divider-description {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
 
 .advantages-list-item:nth-child(2n) {
     background-color: rgba(131, 179, 211, 0.12);
@@ -160,8 +178,18 @@ button {
 }
 
 .features-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
     text-transform: uppercase;
     color: #000000;
+}
+
+.features-description {
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
 }
 
 .hotel-search {
