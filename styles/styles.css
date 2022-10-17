@@ -137,21 +137,23 @@ ul {
 }
 
 
+.advantages-all {
+  padding-top: 103px;
+  padding-left: 112.5px;
+  padding-right: 112.5px;
+  padding-bottom: 121px;
+}
+
 .advantages-title {
     margin: 0;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-    text-align: center;
+
     text-transform: uppercase;
     color: #000000;
     margin: 0;
     margin-bottom: 62px;
-    padding-top: 103px;
-    padding-left: 112.5px;
-    padding-right: 112.5px;
-
-
 
 }
 
@@ -160,12 +162,7 @@ ul {
     line-height: 21px;
     text-align: center;
     color: #333333;
-    padding-bottom: 121px;
-    padding-left: 85px;
-    padding-right: 85px;
     margin: 0;
-
-
 }
 
 .advantages-list-title {
@@ -173,10 +170,8 @@ ul {
     line-height: 28px;
     color: white;
     text-transform: uppercase;
-    padding-top: 92px;
-    padding-left: 112.5px;
-    padding-right: 112.5px;
     margin-bottom: 62px;
+
 }
 
 .advantages-list-description {
@@ -185,9 +180,13 @@ ul {
     color: #FFFFFF;
     padding: 0;
     margin: 0;
-    padding-bottom: 25px;
-    padding-left: 85px;
-    padding-right: 85px;
+}
+
+.advantages-wrap {
+  padding-left: 85px;
+  padding-right: 85px;
+  padding-top: 92px;
+  width: 400px;
 }
 
 .advantages-list {
@@ -221,6 +220,10 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-left: 275px;
+  padding-right: 274px;
+  padding-bottom: 90px;
+  padding-top: 69px;
 }
 
 .divider-title {
@@ -230,9 +233,6 @@ ul {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
-  padding-top: 69px;
-  padding-left: 290px;
-  padding-right: 290px;
   margin-bottom: 25px;
 }
 
@@ -241,14 +241,6 @@ ul {
     margin: 0;
     font-size: 22px;
     line-height: 26px;
-    padding-right: 274px;
-    padding-left: 275px;
-    padding-bottom: 90px;
-
-}
-
-.advantages-wrap {
-  width: 400px;
 }
 
 .advantages-list-item:nth-child(2n) {
@@ -268,6 +260,11 @@ ul {
 .features-list-item {
     width: 400px;
     gap: 10px;
+    padding-left: 85px;
+    padding-right: 85px;
+    padding-top: 80px;
+    padding-bottom: 81px;
+    text-align: center;
 }
 
 .features-list-item:first-child {
@@ -296,23 +293,18 @@ ul {
     line-height: 28px;
     text-transform: uppercase;
     color: #000000;
-    padding-top: 182px;
-    padding-left: 85px;
-    padding-right: 85px;
+    padding-top: 120px;
     text-align: center;
     margin: 0;
     margin-bottom: 30px;
-    margin-top: 30px;
+
 
 }
 
 .features-description {
     font-size: 18px;
     line-height: 21px;
-    color: #333333;
-    padding-left: 85px;
-    padding-right: 85px;
-    padding-bottom: 81px;
+    color: #333333;s
     text-align: center;
     margin: 0;
 }
@@ -323,12 +315,16 @@ ul {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-left: 304px;
+    padding-right: 304px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 
 }
 
 .hotel-title {
     margin: 0;
-    padding-top: 96px;
+
     text-transform: uppercase;
     font-size: 30px;
     line-height: 36px;
@@ -342,8 +338,6 @@ ul {
     font-size: 22px;
     line-height: 26px;
     color: #333333;
-    padding-left: 304px;
-    padding-right: 304px;
 }
 
 .hotel-button {
@@ -356,7 +350,6 @@ ul {
     line-height: 36px;
     margin-right: 412px;
     margin-left: 412px;
-    margin-bottom: 96px;
     margin-top: 54px;
     white-space: nowrap;
     padding: 8px 50px;
@@ -369,6 +362,10 @@ ul {
     background-image: url(../images/index-background-2.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
+    padding-left: 258px;
+    padding-right: 258px;
+    padding-bottom: 104px;
+    padding-top: 96px;
 }
 
 .newsletter-title {
@@ -377,9 +374,7 @@ ul {
     font-size: 30px;
     line-height: 36px;
     color: #ffffff;
-    padding-top: 96px;
-    margin-left: 398px;
-    margin-right: 398px;
+
 }
 
 .newsletter-description {
@@ -405,7 +400,7 @@ input {
   background-color: #F2F2F2;
   width: 452px;
   height: 52px;
-  margin-bottom: 104px;
+
 
 }
 
@@ -419,7 +414,7 @@ input {
     padding: 8px 50px;
     width: 232px;
     height: 52px;
-    margin-bottom: 104px;
+
 }
 
 footer {
