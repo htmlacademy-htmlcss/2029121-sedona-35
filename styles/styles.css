@@ -216,9 +216,12 @@ ul {
 .advantages-list-item-img {
   width: 100%;
   display: flex;
-  grid-column: 1/4;
+  grid-column: 1/-1;
 }
 
+.img-block {
+    object-fit: cover;
+}
 
 
 .divider {
@@ -266,7 +269,6 @@ ul {
 
 .features-list-item {
     width: 400px;
-    gap: 10px;
     padding-left: 85px;
     padding-right: 85px;
     padding-top: 182px;
