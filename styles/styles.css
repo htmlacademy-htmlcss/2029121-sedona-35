@@ -69,9 +69,8 @@ ul {
 
 .main-nav {
     display: flex;
-    flex-wrap: wrap;
     min-height: 64px;
-    max-width: 60%;
+
     margin: 0 auto;
     padding-left: 70px;
     padding-right: 70px;
@@ -92,6 +91,8 @@ ul {
     margin-left: 30px;
     padding: 0;
     display: flex;
+    max-width: 60%;
+    flex-wrap: wrap;
 }
 
 .buttons-nav-list {
@@ -143,6 +144,9 @@ ul {
   padding-left: 112.5px;
   padding-right: 112.5px;
   padding-bottom: 121px;
+
+
+
 }
 
 .advantages-title {
@@ -150,7 +154,6 @@ ul {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-
     text-transform: uppercase;
     color: #000000;
     margin: 0;
@@ -189,34 +192,37 @@ ul {
   padding-right: 85px;
   padding-top: 92px;
   width: 400px;
+  background-color: #82B3D3;
+  color: white;
+
+
+
 }
 
 .advantages-list {
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 384px 384px 384px;
     margin: 0;
+
 }
 
-
-.advantages-wrap {
-    background-color: #82B3D3;
-    color: white;
-}
 
 .advantages-list-item {
-
     width: 400px;
 }
 
 .advantages-list-item-img {
   width: 100%;
   display: flex;
+  grid-column: 1/-1;
 }
 
 .img-block {
-  display: block;
+    object-fit: cover;
 }
+
 
 .divider {
   display: flex;
@@ -256,13 +262,13 @@ ul {
 
 .features-list {
 
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 384px;
 }
 
 .features-list-item {
     width: 400px;
-    gap: 10px;
     padding-left: 85px;
     padding-right: 85px;
     padding-top: 182px;
@@ -306,7 +312,7 @@ ul {
 .features-description {
     font-size: 18px;
     line-height: 21px;
-    color: #333333;s
+    color: #333333;
     text-align: center;
     margin: 0;
 }
