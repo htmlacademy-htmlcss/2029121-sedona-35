@@ -26,6 +26,7 @@
 }
 
 
+
 .page-wrapper {
     width: 1200px;
     margin: 0 auto;
@@ -102,6 +103,7 @@ ul {
 }
 
 .nav-list-item {
+    margin: 0 ;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 16px;
@@ -111,6 +113,7 @@ ul {
 .nav-list-item.icon {
     padding: 22px 12px;
 
+
 }
 
 .want-button {
@@ -118,7 +121,27 @@ ul {
     color: white;
     font-size: 16px;
     line-height: 20px;
+    display: block;
+    padding: 8px 34px;
+    border-radius: 4px;
+}
 
+.want-button:hover {
+  background-color: #615048;
+}
+
+.want-button:focus {
+  background-color: #615048;
+}
+
+.want-button:active {
+ background-color: #756157;
+ color: rgba(255, 255, 255, 0.3);
+}
+
+.want-button:disabled {
+  background-color:  #E5E5E5;
+  color: #ffffff;
 }
 
 .promo {
@@ -361,7 +384,25 @@ ul {
     margin-top: 54px;
     white-space: nowrap;
     padding: 8px 50px;
+    border-radius: 4px;
+}
 
+.hotel-button:hover {
+  background-color:  #615048;
+}
+
+.hotel-button:focus {
+ background-color: #615048;
+}
+
+.hotel-button:active {
+ background-color: #756157;
+ color: rgba(255, 255, 255, 0.3);
+}
+
+.hotel-button:disabled {
+  background-color: #E5E5E5;
+  color: #FFFFFF;
 }
 
 .newsletter {
@@ -412,7 +453,7 @@ input {
 
 .button-subscribe {
     color: white;
-    background-color: #82B3D3;;
+    background-color: #82B3D3;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
@@ -420,7 +461,19 @@ input {
     padding: 8px 50px;
     width: 232px;
     height: 52px;
+}
 
+.button-subscribe:hover {
+  background-color: #68A2CA;
+}
+
+.button-subscribe:focus {
+  background-color: #68A2CA;
+}
+
+.button-subscribe:active {
+  background-color:  #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 footer {
@@ -440,27 +493,24 @@ footer {
   margin: 5px;
 }
 
-.vk {
-    background-image: url(../images/vk.svg);
-    background-repeat: no-repeat;
-}
-
-.telegram {
-    background-image: url(../images/telegram.svg);
-    background-repeat: no-repeat;
-}
-
-.youtube {
-    background-image: url(../images/youtube.svg);
-    background-repeat: no-repeat;
-
-}
 
 .socials-item {
     width: 40px;
     height: 40px;
 }
 
+
+.socials-link:hover svg path {
+  fill: #68A2CA;
+}
+
+.socials-link svg path {
+  fill: #68A2CA;
+}
+
+.socials-link:active svg path {
+  fill: rgba(104, 162, 202, 0.3);
+}
 
 
 .phone {
@@ -472,5 +522,27 @@ footer {
 }
 
 
+.phone:hover {
+  color: #756157;
+}
 
+.phone:active {
+  color:  rgba(117, 97, 87, 0.3);
+}
+
+.phone:focus {
+  color: #756157;
+}
+
+.site-link:hover svg path {
+  fill: #756157;
+}
+
+.site-link:focus svg path {
+  fill: #756157;
+}
+
+.site-link:active svg path {
+  fill: rgba(117, 97, 87, 0.3);
+}
 
