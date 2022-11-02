@@ -66,15 +66,24 @@ ul {
     list-style: none;
 }
 
+.current {
+  border-bottom: 2px solid #756257;
+}
+
 
 
 .main-nav {
     display: flex;
     min-height: 64px;
-
     margin: 0 auto;
     padding-left: 70px;
     padding-right: 70px;
+    position: relative;
+}
+
+.logo {
+  position: absolute;
+
 }
 
 .nav-link {
@@ -84,6 +93,7 @@ ul {
     font-size: 20px;
     line-height: 24px;
     text-transform: capitalize;
+
 
 }
 
@@ -102,12 +112,18 @@ ul {
     align-self: center;
 }
 
+.nav-list-item:first-child {
+  margin-left: 120px;
+}
+
 .nav-list-item {
+    padding: 0;
     margin: 0 ;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 10px;
     padding-left: 16px;
     padding-right: 16px;
+
 }
 
 .nav-list-item.icon {
@@ -115,6 +131,7 @@ ul {
 
 
 }
+
 
 .want-button {
     background-color: #756157;
@@ -124,6 +141,7 @@ ul {
     display: block;
     padding: 8px 34px;
     border-radius: 4px;
+    margin-left: 20px;
 }
 
 .want-button:hover {
@@ -139,9 +157,27 @@ ul {
  color: rgba(255, 255, 255, 0.3);
 }
 
-.want-button:disabled {
-  background-color:  #E5E5E5;
-  color: #ffffff;
+
+.fav-icon {
+  position: absolute;
+}
+
+.fav {
+  background-color: #7DB54F;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: white;
+  line-height: 10px;
+  font-size: 10px;
+  position: relative;
+  top: -35px;
+  right: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
 }
 
 .promo {
@@ -164,9 +200,19 @@ ul {
 
 .advantages-all {
   padding-top: 103px;
-  padding-left: 112.5px;
-  padding-right: 112.5px;
+  padding-left: 85px;
+  padding-right: 85px;
   padding-bottom: 121px;
+}
+
+.advantages-title::after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  transform: translateX(-150%);
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0,0 , 0, 0.3);
 
 
 
@@ -181,6 +227,11 @@ ul {
     color: #000000;
     margin: 0;
     margin-bottom: 62px;
+    position: relative;
+    max-width: 175px;
+    margin-left: 27.5px;
+    margin-right: 27.5px;
+
 
 }
 
@@ -197,10 +248,25 @@ ul {
     line-height: 28px;
     color: white;
     text-transform: uppercase;
-    margin-bottom: 62px;
+    margin-bottom: 30px;
+    padding-bottom: 32px;
     margin-top: 0;
+    position: relative;
 
 }
+
+.advantages-list-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateX(-50%);
+
+}
+
 
 .advantages-list-description {
     font-size: 18px;
@@ -233,7 +299,8 @@ ul {
 
 
 .advantages-list-item {
-    width: 400px;
+    padding: 0;
+    margin: 0;
 }
 
 .advantages-list-item-img {
@@ -302,20 +369,20 @@ ul {
 .features-list-item:nth-child(3n+1) {
     background-image: url(../images/house.svg);
     background-repeat: no-repeat;
-    background-position: 50% 30%;
+    background-position: 50% 80px;
     background-color: rgba(131, 179, 211, 0.12);
 }
 
 .features-list-item:nth-child(3n-1) {
     background-image: url(../images/food.svg);
     background-repeat: no-repeat;
-    background-position: 50% 30%;
+    background-position: 50% 80px;
 }
 
 .features-list-item:nth-child(3n) {
     background-image: url(../images/gift.svg);
     background-repeat: no-repeat;
-    background-position: 50% 30%;
+    background-position: 50% 80px;
     background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -385,6 +452,9 @@ ul {
     white-space: nowrap;
     padding: 8px 50px;
     border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
 
 .hotel-button:hover {
@@ -449,6 +519,14 @@ input {
   width: 452px;
   height: 52px;
   margin: 0;
+  border: none;
+  border-radius: 4px 0px 0px 4px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
 }
 
 .button-subscribe {
@@ -461,6 +539,10 @@ input {
     padding: 8px 50px;
     width: 232px;
     height: 52px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 0px 4px 4px 0px;
 }
 
 .button-subscribe:hover {
@@ -474,6 +556,11 @@ input {
 .button-subscribe:active {
   background-color:  #82B3D3;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.button-subscribe:disabled {
+  background-color: #E5E5E5;
+  color: #FFFFFF;
 }
 
 footer {
@@ -504,9 +591,7 @@ footer {
   fill: #68A2CA;
 }
 
-.socials-link svg path {
-  fill: #68A2CA;
-}
+
 
 .socials-link:active svg path {
   fill: rgba(104, 162, 202, 0.3);
