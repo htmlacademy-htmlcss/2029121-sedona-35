@@ -112,6 +112,15 @@ ul {
     align-self: center;
 }
 
+.buttons-nav-item {
+ padding: 22px 12px;
+}
+
+.buttons-nav-item.a {
+  padding: 14px 0;
+}
+
+
 .nav-list-item:first-child {
   margin-left: 120px;
 }
