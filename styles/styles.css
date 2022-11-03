@@ -47,8 +47,6 @@
 
 body {
     font-family: "PT Sans", "Arial", sans-serif;
-    font-size: 22px;
-    line-height: 26px;
     background-color: #F2F2F2;
     margin: 0;
 
@@ -75,16 +73,22 @@ ul {
 .main-nav {
     display: flex;
     min-height: 64px;
-    margin: 0 auto;
-    padding-left: 70px;
+    padding-left: 240px;
     padding-right: 70px;
     position: relative;
+    justify-content: space-between;
 }
 
 .logo {
   position: absolute;
-
+  top: 0;
+  left: 70px;
 }
+
+.logo.img {
+  display: block;
+}
+
 
 .nav-link {
     color: #000000;
@@ -93,13 +97,15 @@ ul {
     font-size: 20px;
     line-height: 24px;
     text-transform: capitalize;
+    padding-top: 20px;
+    padding-bottom: 18px;
+    display: block;
 
 
 }
 
 .nav-list {
     margin: 0;
-    margin-left: 30px;
     padding: 0;
     display: flex;
     max-width: 60%;
@@ -107,7 +113,6 @@ ul {
 }
 
 .buttons-nav-list {
-    margin-left: auto;
     display: flex;
     align-self: center;
 }
@@ -116,30 +121,29 @@ ul {
  padding: 22px 12px;
 }
 
-.buttons-nav-item.a {
+.buttons-nav-item.button {
   padding: 14px 0;
+  margin-left: 20px;
 }
 
+.buttons-nav-link {
+  text-decoration: none;
+  display: block;
+  height: 20px;
+}
 
-.nav-list-item:first-child {
-  margin-left: 120px;
+.buttons-nav-link.svg {
+  height: 20px;
+  width: 20px;
 }
 
 .nav-list-item {
     padding: 0;
-    margin: 0 ;
-    padding-top: 15px;
-    padding-bottom: 10px;
     padding-left: 16px;
     padding-right: 16px;
 
 }
 
-.nav-list-item.icon {
-    padding: 22px 12px;
-
-
-}
 
 
 .want-button {
@@ -151,6 +155,10 @@ ul {
     padding: 8px 34px;
     border-radius: 4px;
     margin-left: 20px;
+    text-decoration: none;
+   font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 14px;
 }
 
 .want-button:hover {
@@ -168,7 +176,7 @@ ul {
 
 
 .fav-icon {
-  position: absolute;
+  position: relative;
 }
 
 .fav {
@@ -179,8 +187,8 @@ ul {
   color: white;
   line-height: 10px;
   font-size: 10px;
-  position: relative;
-  top: -35px;
+  position: absolute;
+  top: 10px;
   right: -10px;
   display: flex;
   justify-content: center;
@@ -212,13 +220,17 @@ ul {
   padding-left: 85px;
   padding-right: 85px;
   padding-bottom: 121px;
+  display: flex;
+   flex-direction: column;
+  align-items: center;
 }
 
 .advantages-title::after {
   content: "";
   position: absolute;
-  bottom: -50%;
-  transform: translateX(-150%);
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
   width: 60px;
   height: 2px;
   background-color: rgba(0,0 , 0, 0.3);
@@ -235,11 +247,11 @@ ul {
     text-transform: uppercase;
     color: #000000;
     margin: 0;
-    margin-bottom: 62px;
+
     position: relative;
     max-width: 175px;
-    margin-left: 27.5px;
-    margin-right: 27.5px;
+    margin-bottom: 30px;
+    padding-bottom: 32px;
 
 
 }
@@ -254,6 +266,7 @@ ul {
 
 .advantages-list-title {
     font-size: 24px;
+    font-weight: 700;
     line-height: 28px;
     color: white;
     text-transform: uppercase;
@@ -281,7 +294,6 @@ ul {
     font-size: 18px;
     line-height: 21px;
     color: #FFFFFF;
-    padding: 0;
     margin: 0;
 }
 
@@ -289,6 +301,7 @@ ul {
   padding-left: 85px;
   padding-right: 85px;
   padding-top: 92px;
+  padding-bottom: 92px;
   width: 400px;
   background-color: #82B3D3;
   color: white;
@@ -455,8 +468,6 @@ ul {
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
-    margin-right: 412px;
-    margin-left: 412px;
     margin-top: 54px;
     white-space: nowrap;
     padding: 8px 50px;
@@ -514,6 +525,10 @@ ul {
     margin-bottom: 54px;
 }
 
+.newsletter-input {
+  margin: 0;
+}
+
 .form {
   margin: 0;
   padding: 0;
@@ -536,6 +551,21 @@ input {
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+  outline: none;
+}
+
+.email:hover {
+ background-color: #E6E6E6;
+}
+
+.email:focus {
+  background-color: #E6E6E6;
+  border: 3px solid #83B3D3;
+}
+
+.email:active {
+  border: 2px solid #000000;
+  background-color: #F2F2F2;
 }
 
 .button-subscribe {
@@ -587,6 +617,8 @@ footer {
   flex-wrap: wrap;
   max-width: 60%;
   margin: 5px;
+  justify-content: center;
+  align-items: center;
 }
 
 
