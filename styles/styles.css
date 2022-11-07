@@ -158,7 +158,6 @@ ul {
     text-decoration: none;
    font-weight: 700;
     text-transform: uppercase;
-    margin-top: 14px;
 }
 
 .want-button:hover {
@@ -617,14 +616,17 @@ footer {
   flex-wrap: wrap;
   max-width: 60%;
   margin: 5px;
-  justify-content: center;
-  align-items: center;
+
 }
 
 
 .socials-item {
     width: 40px;
     height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 
