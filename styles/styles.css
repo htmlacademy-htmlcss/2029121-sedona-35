@@ -537,7 +537,7 @@ ul {
 
 }
 
-input {
+.email {
   background-color: #F2F2F2;
   width: 452px;
   height: 52px;
@@ -682,12 +682,13 @@ footer {
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal {
   position: relative;
   background-color: #ffffff;
-  margin: auto;
   padding-left: 70px;
   padding-right: 70px;
   padding-top: 64px;
@@ -706,8 +707,8 @@ footer {
   border-radius: 50%;
   top: 64px;
   right: 52px;
-  width: 14px;
-  height: 14px;
+  width: 52px;
+  height: 52px;
   background-color: #F2F2F2;
   border: none;
   background-image: url(../images/modal-close.svg);
@@ -723,34 +724,21 @@ font-weight: 700;
 font-size: 30px;
 line-height: 36px;
 text-transform: uppercase;
-}
-.input-in {
-  position: relative;
-}
-
-.input-out {
-  position: relative;
+margin-top: 0;
+margin-bottom: 64px;
 }
 
-.in-label::after {
-  content: "Мы не можем отправить вас в прошлое";
-  position: absolute;
-top: 0;
-right: 0;
-  color: red;
+.field-group {
+  margin-top: 0;
+  margin-bottom: 48px;
 }
 
-.out-label::after {
-  content:"На эти даты есть свободые номера. Пока есть.";
-  position: absolute;
-bottom: 0;
-  color: black;
-}
 
 label {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+
 }
 
 .quantity {
@@ -758,22 +746,85 @@ label {
   justify-content: space-between;
 }
 
-input {
-  width: 440px;
-height: 48px;
-radius: 4px;
-padding: 12px 20px;
-gap: 260px;
+.input-in {
+  font-weight: 700;
+  font-size: 18px;
+line-height: 24px;
 }
 
-.kids-input {
-  width: 110px;
+.input-out {
+  font-weight: 700;
+  font-size: 18px;
+line-height: 24px;
+}
+
+.input-modal {
+  width: 440px;
 height: 48px;
+padding: 12px 20px;
+gap: 260px;
+background: #F2F2F2;
+border-radius: 4px;
+border: none;
+}
+
+.text-in {
+  color: #FF5757;;
+  font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.text-out {
+  color: black;
+  font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+.kids-input {
+  width: 11px;
+  height: 48px;
 }
 
 .adults-input {
-  width: 110px;
+  width: 11px;
 height: 48px;
+}
+
+.minus {
+  background: #F2F2F2;
+border-radius: 4px;
+border: none;
+height: 48px;
+width: 11px;
+}
+
+.plus {
+  background: #F2F2F2;
+border-radius: 4px;
+border: none;
+height: 48px;
+width: 11px;
+}
+
+.adults-label {
+  margin-right: 46px;
+}
+
+.kids-label {
+margin-right: 82px;
 }
 
 .modal-button {

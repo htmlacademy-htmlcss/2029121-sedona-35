@@ -190,20 +190,26 @@
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group">
               <label class="in-label" for="date-in">Дата заезда:</label>
-              <input class="input-in" type="text" id="date-in" name="date-in" value="27 апреля 2020">
+              <input class="input-in input-modal" type="text" id="date-in" name="date-in" value="27 апреля 2020">
+              <span class="text-in">Мы не можем отправить вас в прошлое</span>
             </p>
             <p class="field-group">
               <label class="out-label" for="date-out">Дата выезда:</label>
-              <input class="input-out" type="text" id="date-out" name="date-out" value="1 сентября 2023">
+              <input class="input-out input-modal" type="text" id="date-out" name="date-out" value="1 сентября 2023">
+              <span class="text-out">На эти даты есть свободные номера. Пока есть.</span>
             </p>
             <div class="quantity">
             <p class="field-group">
               <label for="adults" class="adults-label">Взрослые:</label>
-              <input class="adults-input" id="adults" name="adults" type="number" value="2">
+              <button type="button" value="-" class="minus"></button>
+              <input class="adults-input input-modal" id="adults" name="adults" type="number" value="2">
+              <button type="button" value="+" class="plus"></button>
             </p>
             <p class="field-group">
               <label for="kids" class="kids-label">Дети:</label>
-              <input type="number" id="kids" class="kids-input" name="kids" value="2">
+              <button type="button" value="-" class="minus"></button>
+              <input type="number" id="kids" class="kids-input input-modal" name="kids" value="2">
+              <button type="button" value="+" class="plus"></button>
             </p>
           </div>
             <button class="modal-button" type="submit">Найти</button>
