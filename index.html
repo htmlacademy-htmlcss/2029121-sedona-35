@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="styles/styles.css">
+
 </head>
 
 <body>
@@ -180,7 +181,116 @@
         </svg>
       </a>
     </footer>
+    <div class="modal-container">
+      <div class="modal modal-search">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+
+            <div class="field-group">
+              <label class="in-label" for="date-in">Дата заезда:</label>
+             <div class="in-container">
+              <div class="input-svg">
+              <input class="input-in input-modal" type="text" id="date-in" name="date-in" value="27 апреля 2020">
+                <svg class="calendar-in" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.75 10C6.05 10 6.25 9.8 6.25 9.5C6.25 9.2 6.05 9 5.75 9C5.45 9 5.25 9.2 5.25 9.5C5.25 9.8 5.45 10 5.75 10Z" fill="black"/>
+                  <path d="M15 2H13V0H12V2H4V0H3V2H1C0.4 2 0 2.4 0 3V14C0 14.5 0.4 15 1 15H15C15.5 15 16 14.5 16 14V3C16 2.4 15.5 2 15 2ZM15 14H1V7H15V14ZM1 6V3H3V5H4V3H12V5H13V3H15V6H1Z" fill="black"/>
+                  <path d="M8 10C8.3 10 8.5 9.8 8.5 9.5C8.5 9.2 8.3 9 8 9C7.7 9 7.5 9.2 7.5 9.5C7.5 9.8 7.7 10 8 10Z" fill="black"/>
+                  <path d="M10.25 10C10.55 10 10.75 9.8 10.75 9.5C10.75 9.2 10.55 9 10.25 9C9.95 9 9.75 9.2 9.75 9.5C9.75 9.8 9.95 10 10.25 10Z" fill="black"/>
+                  <path d="M5.75 11C5.45 11 5.25 11.2 5.25 11.5C5.25 11.8 5.45 12 5.75 12C6.05 12 6.25 11.8 6.25 11.5C6.25 11.2 6.05 11 5.75 11Z" fill="black"/>
+                  <path d="M3.5 10C3.8 10 4 9.8 4 9.5C4 9.2 3.8 9 3.5 9C3.2 9 3 9.2 3 9.5C3 9.8 3.2 10 3.5 10Z" fill="black"/>
+                  <path d="M3.5 11C3.2 11 3 11.2 3 11.5C3 11.8 3.2 12 3.5 12C3.8 12 4 11.8 4 11.5C4 11.2 3.8 11 3.5 11Z" fill="black"/>
+                  <path d="M8 11C7.7 11 7.5 11.2 7.5 11.5C7.5 11.8 7.7 12 8 12C8.3 12 8.5 11.8 8.5 11.5C8.5 11.2 8.3 11 8 11Z" fill="black"/>
+                  <path d="M10.25 11C9.95 11 9.75 11.2 9.75 11.5C9.75 11.8 9.95 12 10.25 12C10.55 12 10.75 11.8 10.75 11.5C10.75 11.2 10.55 11 10.25 11Z" fill="black"/>
+                  <path d="M12.5 10C12.8 10 13 9.8 13 9.5C13 9.2 12.8 9 12.5 9C12.2 9 12 9.2 12 9.5C12 9.8 12.2 10 12.5 10Z" fill="black"/>
+                  <path d="M12.5 11C12.2 11 12 11.2 12 11.5C12 11.8 12.2 12 12.5 12C12.8 12 13 11.8 13 11.5C13 11.2 12.8 11 12.5 11Z" fill="black"/>
+                  </svg>
+                </div>
+              <span class="text-in">Мы не можем отправить вас в прошлое</span>
+              </div>
+              </div>
+            <div class="field-group">
+              <label class="out-label" for="date-out">Дата выезда:</label>
+              <div class="out-container">
+                <div class="input-svg">
+               <input class="input-out input-modal" type="text" id="date-out" name="date-out" value="1 сентября 2023">
+
+                <svg class="calendar-out" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.75 10C6.05 10 6.25 9.8 6.25 9.5C6.25 9.2 6.05 9 5.75 9C5.45 9 5.25 9.2 5.25 9.5C5.25 9.8 5.45 10 5.75 10Z" fill="black"/>
+                  <path d="M15 2H13V0H12V2H4V0H3V2H1C0.4 2 0 2.4 0 3V14C0 14.5 0.4 15 1 15H15C15.5 15 16 14.5 16 14V3C16 2.4 15.5 2 15 2ZM15 14H1V7H15V14ZM1 6V3H3V5H4V3H12V5H13V3H15V6H1Z" fill="black"/>
+                  <path d="M8 10C8.3 10 8.5 9.8 8.5 9.5C8.5 9.2 8.3 9 8 9C7.7 9 7.5 9.2 7.5 9.5C7.5 9.8 7.7 10 8 10Z" fill="black"/>
+                  <path d="M10.25 10C10.55 10 10.75 9.8 10.75 9.5C10.75 9.2 10.55 9 10.25 9C9.95 9 9.75 9.2 9.75 9.5C9.75 9.8 9.95 10 10.25 10Z" fill="black"/>
+                  <path d="M5.75 11C5.45 11 5.25 11.2 5.25 11.5C5.25 11.8 5.45 12 5.75 12C6.05 12 6.25 11.8 6.25 11.5C6.25 11.2 6.05 11 5.75 11Z" fill="black"/>
+                  <path d="M3.5 10C3.8 10 4 9.8 4 9.5C4 9.2 3.8 9 3.5 9C3.2 9 3 9.2 3 9.5C3 9.8 3.2 10 3.5 10Z" fill="black"/>
+                  <path d="M3.5 11C3.2 11 3 11.2 3 11.5C3 11.8 3.2 12 3.5 12C3.8 12 4 11.8 4 11.5C4 11.2 3.8 11 3.5 11Z" fill="black"/>
+                  <path d="M8 11C7.7 11 7.5 11.2 7.5 11.5C7.5 11.8 7.7 12 8 12C8.3 12 8.5 11.8 8.5 11.5C8.5 11.2 8.3 11 8 11Z" fill="black"/>
+                  <path d="M10.25 11C9.95 11 9.75 11.2 9.75 11.5C9.75 11.8 9.95 12 10.25 12C10.55 12 10.75 11.8 10.75 11.5C10.75 11.2 10.55 11 10.25 11Z" fill="black"/>
+                  <path d="M12.5 10C12.8 10 13 9.8 13 9.5C13 9.2 12.8 9 12.5 9C12.2 9 12 9.2 12 9.5C12 9.8 12.2 10 12.5 10Z" fill="black"/>
+                  <path d="M12.5 11C12.2 11 12 11.2 12 11.5C12 11.8 12.2 12 12.5 12C12.8 12 13 11.8 13 11.5C13 11.2 12.8 11 12.5 11Z" fill="black"/>
+                  </svg>
+                </div>
+              <span class="text-out">На эти даты есть свободные номера. Пока есть.</span>
+            </div>
+              </div>
+            <div class="quantity">
+            <div class="field-group-numbers">
+              <label for="adults" class="adults-label">Взрослые:</label>
+              <div class="plus-minus">
+              <button type="button" value="-" class="minus">
+                <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                  </svg>
+              </button>
+              <input class="adults-input input-modal" id="adults" name="adults" type="number" value="2">
+              <button type="button" value="+" class="plus">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                  </svg>
+              </button>
+            </div>
+            </div>
+            <div class="field-group-numbers">
+              <label for="kids" class="kids-label">Дети:</label>
+              <div class="info-message">
+                <div class="info-icon">
+                  <svg class="info" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"/>
+              </svg>
+              <div class="message">
+                Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+              </div>
+            </div>
+
+            </div>
+              <div class="plus-minus">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4H11V6H9V4ZM11 16H9V7H11V16Z" fill="white"/>
+                </svg>
+              <button type="button" value="-" class="minus">
+                <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                  </svg>
+              </button>
+              <input type="number" id="kids" class="kids-input input-modal" name="kids" value="2">
+              <button type="button" value="+" class="plus">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                  </svg>
+              </button>
+            </div>
+            </div>
+          </div>
+            <button class="modal-button" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
 </div>
 </body>
+<script src="scripts/js.js"></script>
 
 </html>
