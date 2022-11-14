@@ -729,7 +729,6 @@ margin-bottom: 64px;
 }
 
 .field-group {
-  margin-top: 0;
   margin-bottom: 48px;
   display: flex;
 
@@ -739,7 +738,7 @@ margin-bottom: 64px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 48px;
+  margin-bottom: 23px;
 }
 
 label {
@@ -747,21 +746,33 @@ label {
   font-size: 20px;
   line-height: 24px;
   margin: 0;
+  margin-top: 12px;
   white-space: nowrap;
 
 }
+
+
 
 .in-container {
   display: flex;
   position: relative;
   flex-direction: column;
+  margin-left: 24px;
+}
 
+.in-container svg {
+  opacity: 0.3;
+}
+
+.out-container svg {
+  opacity: 0.3;
 }
 
 .out-container {
 display: flex;
 position: relative;
 flex-direction: column;
+margin-left: 24px;
 }
 
 
@@ -775,7 +786,6 @@ flex-direction: column;
   font-weight: 700;
   font-size: 18px;
 line-height: 24px;
-margin-left: 24px;
 padding-right: 20px;
 
 }
@@ -785,19 +795,18 @@ padding-right: 20px;
   font-weight: 700;
   font-size: 18px;
 line-height: 24px;
-margin-left: 24px;
 padding-right: 20px;
 }
 
 .calendar-in {
   position: absolute;
-  top: 20px;
+  top: 14px;
   right: 20px;
 }
 
 .calendar-out {
 position: absolute;
-top: 20px;
+top: 14px;
 right: 20px;
 }
 
@@ -833,21 +842,34 @@ font-size: 16px;
 line-height: 21px;
 display: flex;
 align-items: center;
-justify-content: center;
+padding-left: 20px;
+padding-right: 20px;
 white-space: nowrap;
 }
 
 
 .kids-input {
-  width: 11px;
+  width: 40px;
   height: 48px;
   border-radius: 0;
+  padding: 14px 10px;
+  font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 20px;
 }
 
 .adults-input {
-  width: 11px;
+  width: 40px;
 height: 48px;
 border-radius: 0;
+padding: 14px 10px;
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 20px;
 }
 
 .minus {
@@ -857,6 +879,10 @@ border: none;
 width: 40px;
 height: 48px;
 margin: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0;
 }
 
 .plus {
@@ -866,14 +892,20 @@ border: none;
 width: 40px;
 height: 48px;
 margin: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0;
 }
 
 .adults-label {
   margin-right: 46px;
+  margin-top: 0;
 }
 
 .kids-label {
 margin-right: 10px;
+margin-top: 0;
 }
 
 .modal-button {
@@ -901,11 +933,15 @@ color: #ffffff;
   position: relative;
 }
 
+.info-icon:hover .message {
+  display: flex;
+}
+
 .message {
   position: absolute;
   width: 256px;
   height: 143px;
-  left: -80px;
+  left: -115px;
   top: 41px;
   background: #333333;
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
@@ -916,17 +952,21 @@ color: #ffffff;
   font-size: 16px;
   line-height: 20px;
   color: white;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   padding: 15px 18px 20px 22px;
 }
 
 .message::before {
+  position: absolute;
+  top: -30px;
+  left: 108px;
   content: "";
-  background-color: black;
 width: 19px;
 height: 9px;
+border: 20px solid transparent;
+border-bottom: 20px solid #333333;
 }
 
 
